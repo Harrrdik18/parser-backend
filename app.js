@@ -9,7 +9,7 @@ const reportRoutes = require('./routes/reportRoutes');
 const app = express();
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://parser-production-902f.up.railway.app'],
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
